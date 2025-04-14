@@ -30,4 +30,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 参考网站：
 https://codepen.io/h3xc0ntr0l/pen/BoNEXq
+
 https://codepen.io/albizan/pen/mMWdWZ
+
+https://dribbble.com/shots/4312274-Contact-Page
+
+https://apidocs.imgur.com/
+
+https://developers.facebook.com/docs/instagram-platform/instagram-api-with-facebook-login
+
+https://developers.facebook.com/products/instagram/success-stories/
+
+https://developers.facebook.com/products/instagram/apis/
+
+https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login

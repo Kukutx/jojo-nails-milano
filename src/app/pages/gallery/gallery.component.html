@@ -1,0 +1,7 @@
+<div class="gallery-container">
+    <mat-grid-list cols="3" rowHeight="200px" gutterSize="8px">
+      <mat-grid-tile *ngFor="let item of fullGallery " class="gallery-item">
+        <img [src]="item" alt="Nail Art">
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>

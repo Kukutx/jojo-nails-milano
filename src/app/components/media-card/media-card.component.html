@@ -1,0 +1,30 @@
+<div class="card shadow-sm mb-3">
+    <ng-container *ngIf="media.type === 'image'; else videoTemplate">
+      <img [src]="media.url" class="card-img-top" [alt]="media.alt" />
+    </ng-container>
+    <ng-template #videoTemplate>
+      <video autoplay muted loop playsinline class="w-100 no-pointer">
+        <source [src]="media.url" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </ng-template>
+  </div>
+  
+
+
+
+  <!-- <mat-grid-list cols="1" rowHeight="fit" gutterSize="16px">  
+    <mat-grid-tile>  
+      <div class="card shadow-sm mb-3">  
+        <ng-container *ngIf="media.type === 'image'; else videoTemplate">  
+          <img [src]="media.url" class="card-img-top" [alt]="media.alt" />  
+        </ng-container>  
+        <ng-template #videoTemplate>  
+          <video controls class="w-100">  
+            <source [src]="media.url" type="video/mp4" />  
+            Your browser does not support the video tag.  
+          </video>  
+        </ng-template>  
+      </div>  
+    </mat-grid-tile>  
+  </mat-grid-list>   -->

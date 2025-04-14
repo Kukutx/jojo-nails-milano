@@ -1,0 +1,14 @@
+.content {
+    background-image: url('../../assets/images/bg.png');;
+	background-size:cover;
+}
+main.content.isHomePage {
+    padding-top: 60px;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 40px 40px 40px 40px;
+}

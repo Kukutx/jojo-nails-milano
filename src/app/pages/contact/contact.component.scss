@@ -1,0 +1,58 @@
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+.contact-box {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.contact-info {
+    background: #222;
+    color: white;
+    padding: 40px;
+    flex: 1;
+
+    a {
+        text-decoration: none; // 取消下划线
+        color: inherit; // 继承父元素颜色，保持默认
+        transition: color 0.3s ease; // 平滑过渡
+      
+        &:hover {
+            color: orange !important;
+        }
+    }
+}
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.contact-info p {
+    margin-bottom: 10px;
+}
+.contact-form {
+    padding: 40px;
+    flex: 1;
+}
+.contact-form h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.btn-send {
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+}
+.btn-send:hover {
+    background: #444;
+}

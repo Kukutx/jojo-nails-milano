@@ -1,0 +1,18 @@
+.card {  
+    overflow: hidden;  
+}  
+
+.card-img-top {  
+  object-fit: cover;  
+  width: 100%; /* 确保图片动画适应卡片 */  
+  height: auto; /* 使图片大小自适应 */  
+}  
+
+video {  
+  max-width: 100%;  /* 确保视频宽度适应 */  
+  height: auto;     /* 使视频大小自适应 */  
+}  
+.no-pointer {
+  pointer-events: none; /* 禁止用户点击或交互 */
+  object-fit: cover;    /* 如果你想让视频铺满容器可加上 */
+}

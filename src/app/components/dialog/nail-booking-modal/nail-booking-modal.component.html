@@ -1,0 +1,43 @@
+<!-- <h2 mat-dialog-title>Datepicker in a Dialog</h2>
+<mat-dialog-content align="center">
+  <mat-form-field>
+    <mat-label>Select a date</mat-label>
+    <input matInput [matDatepicker]="picker" [formControl]="date">
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Clear</button>
+  <button mat-button [mat-dialog-close]="date.value" cdkFocusInitial>Ok</button>
+</mat-dialog-actions>
+ -->
+
+
+ <h2 mat-dialog-title>预约时间</h2>
+
+<mat-dialog-content align="center">
+  <mat-form-field appearance="fill">
+    <mat-label>选择日期</mat-label>
+    <input matInput [matDatepicker]="picker" [formControl]="date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>选择时间</mat-label>
+    <input matInput 
+    [ngxMatTimepicker]="timePicker" 
+    [formControl]="time" 
+    [format]="24"
+    [max]="maxTime"
+    [min]="minTime">
+    <ngx-mat-timepicker-toggle matSuffix [for]="timePicker"></ngx-mat-timepicker-toggle>
+    <ngx-mat-timepicker #timePicker></ngx-mat-timepicker>
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>取消</button>
+  <button mat-button (click)="confirmBooking()" cdkFocusInitial>确认</button>
+</mat-dialog-actions>
