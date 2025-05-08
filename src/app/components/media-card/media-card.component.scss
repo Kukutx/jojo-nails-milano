@@ -16,3 +16,97 @@ video {
   pointer-events: none; /* 禁止用户点击或交互 */
   object-fit: cover;    /* 如果你想让视频铺满容器可加上 */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** CSS for the Masonry layout */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+p {
+  font-family: Lato;
+}
+
+.masonry { 
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+  
+.masonry::after {
+  content: '';
+  flex-grow: 999999999;
+  min-width: 200px;
+}
+
+.masonry-brick {
+  position: relative;
+  margin: .2em; /* Some gutter */
+  background-color: violet;
+}
+
+i {
+  display: block;
+}
+
+.masonry-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  vertical-align: bottom;
+  filter: brightness(50%);
+  transition: filter .25s ease-in-out;
+
+  &:hover {
+    filter: brightness(100%);
+  }
+}
+
+.id {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff8;
+  font-size: 10em;
+  pointer-events: none;
+}
+
+.size {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  color: #fff4;
+  pointer-events: none;
+}
+
+.actions {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all .25s ease-in-out;
+
+  button {
+    line-height: 2em;
+  }
+}
+
+.masonry-brick:hover {
+  .actions {
+    opacity: 1;
+  }
+}

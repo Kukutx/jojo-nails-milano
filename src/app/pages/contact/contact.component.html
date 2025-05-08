@@ -2,33 +2,33 @@
 
 <div class="contact-container">
     <div class="contact-box row">
-        <div class="contact-info text-white p-5 col-md-6">
-            <h2>CONTACT</h2>
-            <p><strong>地址：</strong> <a href="{{ googleMapsUrl }}" class="text-white" target="_blank">{{ address }}</a></p>
-            <p><strong>电话：</strong> <a href="tel:{{ phoneNumber }}" class="text-white">{{ phoneNumber }}</a></p>
-            <h3>营业时间</h3>
+      <div class="contact-info text-white p-5 col-md-6">
+        <h2>CONTATTI</h2>
+        <p><strong>Indirizzo:</strong> <a href="{{ googleMapsUrl }}" class="text-white" target="_blank">{{ address }}</a></p>
+        <p><strong>Telefono:</strong> <a href="tel:{{ phoneNumber }}" class="text-white">{{ phoneNumber }}</a></p>
+        <h3>Orari di apertura</h3>
         <ul class="list-unstyled">
           <li *ngFor="let day of workingHours">{{ day.day }}: {{ day.hours }}</li>
         </ul>
         <p><strong>Email: </strong> <a href="mailto:{{email}}" class="text-white">{{email}}</a></p>
-        </div>
-        <div class="contact-form ">
-            <h3>KEEP IN TOUCH</h3>
-            <form>
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Name" required>
-                </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Email" required>
-                </div>
-                <div class="mb-3">
-                    <input type="tel" class="form-control" placeholder="Phone" required>
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" rows="3" placeholder="Message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-send">SEND</button>
-            </form>
-        </div>
+      </div>
+      <div class="contact-form">
+        <h3>RIMANI IN CONTATTO</h3>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nome" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Telefono" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="Messaggio" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-send">INVIA</button>
+        </form>
+      </div>
     </div>
-</div>
+  </div>

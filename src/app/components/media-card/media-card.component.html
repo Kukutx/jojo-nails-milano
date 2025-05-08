@@ -8,23 +8,22 @@
         Your browser does not support the video tag.
       </video>
     </ng-template>
-  </div>
-  
+</div>
 
 
 
-  <!-- <mat-grid-list cols="1" rowHeight="fit" gutterSize="16px">  
-    <mat-grid-tile>  
-      <div class="card shadow-sm mb-3">  
-        <ng-container *ngIf="media.type === 'image'; else videoTemplate">  
-          <img [src]="media.url" class="card-img-top" [alt]="media.alt" />  
-        </ng-container>  
-        <ng-template #videoTemplate>  
-          <video controls class="w-100">  
-            <source [src]="media.url" type="video/mp4" />  
-            Your browser does not support the video tag.  
-          </video>  
-        </ng-template>  
-      </div>  
-    </mat-grid-tile>  
-  </mat-grid-list>   -->
+
+ <!-- <p>
+   everage height <input type="number" min="100" max="600" step="50" [(ngModel)]="everageHeight"> px
+ </p>
+ <div class="masonry masonry--h">
+   <figure class="masonry-brick masonry-brick--h"
+     *ngFor="let item of images; index as i" 
+     [style.width.px]="item.width*everageHeight/item.height" 
+     [style.flex-grow]="item.width*everageHeight/item.height">
+     <i [style.padding-bottom.%]="item.height/item.width*100"></i>
+     <img [src]="item.url" class="masonry-img" alt="Masonry Brick #{{ i }}" #img>
+     <div class="id" [style.font-size.px]="everageHeight*0.7">{{ item.id }}</div>
+     <span class="size">{{ item.width }} x {{ item.height }}</span>
+   </figure>
+ </div> -->

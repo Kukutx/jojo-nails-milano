@@ -15,12 +15,12 @@ export class ContactComponent {
   email = 'info@example.com';
   googleMapsUrl = 'https://www.google.com/maps?q=Via+Milano,+10,+20100+Milano,+Italy';
   workingHours = [
-    { day: '周一', hours: '10:00 - 20:00' },
-    { day: '周二', hours: '10:00 - 20:00' },
-    { day: '周三', hours: '10:00 - 20:00' },
-    { day: '周四', hours: '10:00 - 20:00' },
-    { day: '周五', hours: '10:00 - 20:00' },
-    { day: '周六', hours: '10:00 - 18:00' },
-    { day: '周日', hours: '休息' }
-  ];
+    { day: 'Lunedì', hours: '10:00 - 20:00' },
+    { day: 'Martedì', hours: '10:00 - 20:00' },
+    { day: 'Mercoledì', hours: '10:00 - 20:00' },
+    { day: 'Giovedì', hours: '10:00 - 20:00' },
+    { day: 'Venerdì', hours: '10:00 - 20:00' },
+    { day: 'Sabato', hours: '10:00 - 18:00' },
+    { day: 'Domenica', hours: 'Chiuso' }
+  ];  
 }

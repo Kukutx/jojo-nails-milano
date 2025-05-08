@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AboutComponent } from './about.component';
+import { GoogleReviewsComponent } from './google-reviews.component';
 
-describe('AboutComponent', () => {
-  let component: AboutComponent;
-  let fixture: ComponentFixture<AboutComponent>;
+describe('GoogleReviewsComponent', () => {
+  let component: GoogleReviewsComponent;
+  let fixture: ComponentFixture<GoogleReviewsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AboutComponent]
+      imports: [GoogleReviewsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AboutComponent);
+    fixture = TestBed.createComponent(GoogleReviewsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

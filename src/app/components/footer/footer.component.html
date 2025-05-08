@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <footer class="py-5">
       <div class="row">
         <div class="col-6 col-md-2 mb-3">
@@ -56,4 +56,99 @@
         </ul>
       </div>
     </footer>
+  </div> -->
+
+
+  <!-- footer.component.html -->
+<footer>
+  <!-- Newsletter Section -->
+  <div class="footer-upper">
+    <div class="container newsletter-section text-light py-4 align-items-center d-flex justify-content-center">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <div class="d-flex align-items-center mb-3 mb-md-0">
+          <span class="newsletter-title me-3">RICEVI LA NEWSLETTER</span>
+          <div class="divider"></div>
+        </div>
+  
+        <form class="d-flex flex-grow-1 mx-md-3" (ngSubmit)="subscribeNewsletter()" #newsletterForm="ngForm">
+          <input
+            type="email"
+            class="form-control me-3 newsletter-input"
+            name="email"
+            [(ngModel)]="email"
+            placeholder="Inserisci la tua e-mail qui"
+            required
+          />
+          <button type="submit" class="btn btn-light d-flex align-items-center newsletter-button">
+            <i class="bi bi-envelope me-1"></i> SOTTOSCRIVI
+          </button>
+        </form>
+        
+        <div *ngIf="successMessage" class="newsletter-success text-success mt-2 mt-md-0">
+          {{ successMessage }}
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!-- Main Footer Section -->
+  <div class="bg-dark py-5">
+  <div class="container text-light pt-5">
+    <div class="row">
+      <!-- My Account -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold border-bottom"><i class="bi bi-chevron-right"></i> MY ACCOUNT</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-chevron-right"></i>My Account</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-chevron-right"></i>Addresses</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-chevron-right"></i>Wishlist</a></li>
+        </ul>
+      </div>
+
+      <!-- Customer Service -->
+      <div class="col-md-3 mb-5">
+        <h6 class="fw-bold border-bottom"><i class="bi bi-chevron-right"></i> CUSTOMER SERVICE</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-chevron-right"></i>News</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-chevron-right"></i>Blog</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-chevron-right"></i>Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Information -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold border-bottom"><i class="bi bi-chevron-right"></i> INFORMATION</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-chevron-right"></i>Shipping & Returns</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-chevron-right"></i>Privacy Notice</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-chevron-right"></i>Conditions Of Use</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-chevron-right"></i>About Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Social / Payment -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold border-bottom"><i class="bi bi-chevron-right"></i> FOLLOW US</h6>
+        <div class="mb-3 d-flex gap-2">
+          <button class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-facebook"></i></button>
+          <button class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-twitter"></i></button>
+          <button class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-youtube"></i></button>
+          <button class="btn btn-outline-light btn-sm rounded-circle"><i class="bi bi-instagram"></i></button>
+        </div>
+        <h6 class="fw-bold mt-3 border-bottom "><i class="bi bi-chevron-right"></i> PAYMENT METHODS</h6>
+        <div class="d-flex gap-2">
+          <img src="https://campusbee.ug/wp-content/uploads/2017/08/visa-logo.png" alt="Visa" height="25">
+          <img src="https://logohistory.net/wp-content/uploads/2023/05/Mastercard-Logo-2016.png" alt="MasterCard" height="25">
+          <img src="https://www.pngall.com/wp-content/uploads/5/PayPal-Logo-PNG-Picture.png" alt="PayPal" height="25">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Bottom Bar -->
+  <div class="text-center py-3 bg-secondary text-white small">
+    <div class="mt-1"><p>&copy; 2024 Company, Inc. All rights reserved.</p></div>
+  </div>
+</footer>

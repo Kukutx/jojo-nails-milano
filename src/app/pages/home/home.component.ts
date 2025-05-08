@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MediaCardComponent } from '../../components/media-card/media-card.component';
+import { GoogleReviewsComponent } from '../../components/google-reviews/google-reviews.component';
+import { MatButtonModule } from '@angular/material/button';
+
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule,MediaCardComponent],
+  imports: [CommonModule,MediaCardComponent,GoogleReviewsComponent,MatButtonModule,LazyLoadImageModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -19,4 +23,13 @@ export class HomeComponent {
     { type: 'image', url: 'https://imgur.com/eUDm7P2.jpg', alt: 'Nail art' },
     { type: 'image', url: 'https://d1sdeqoxcfgxl0.cloudfront.net/images/original/0204f12a2e064b8ddf87ae2429c06b5678f715c30bd7f90d25a7547f.jpg', alt: 'Design 2' },
   ];
+
+
+
+
+
+
+  defaultImage = 'https://imgur.com/JLAcXGZ.jpg';
+  image = 'https://images.unsplash.com/photo-1443890923422-7819ed4101c0?fm=jpg';
+  offset = 100;
 }

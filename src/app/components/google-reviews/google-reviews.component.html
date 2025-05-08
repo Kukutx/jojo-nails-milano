@@ -1,0 +1,23 @@
+<div class="reviews-wrapper">
+    <div class="intro">
+      <h2>L'opinione dei nostri clienti</h2>
+      <p>
+        È una buona idea divertirsi con la propria motivazione.
+        Ogni recensione sincera della clientela ha contribuito moltissimo alla svolta nostra.
+        È il momento migliore per farlo, è il modo migliore per farlo!
+      </p>
+      <!-- <app-qr-code></app-qr-code> -->
+      <button (click)="goToGoogleMaps()">Lascia una recensione</button>
+    </div>
+  
+    <div class="cards">
+      <div class="card" *ngFor="let review of reviews">
+        <p class="text">{{review.text}}</p>
+        <div class="author">
+          <img [src]="review.avatar" alt="avatar" />
+          <span>{{review.author}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
